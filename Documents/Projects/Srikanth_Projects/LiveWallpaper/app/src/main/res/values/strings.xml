@@ -1,3 +1,4 @@
 <resources>
     <string name="app_name">LiveWallpaper</string>
+    <string name="setwallpaper">SetWallPaper</string>
 </resources>

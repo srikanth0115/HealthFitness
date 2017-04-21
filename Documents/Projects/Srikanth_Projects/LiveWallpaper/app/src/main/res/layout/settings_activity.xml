@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+
+    android:orientation="vertical">
+
+    <com.skydoves.colorpickerview.ColorPickerView
+        android:id="@+id/colorPickerView"
+        android:layout_width="300dp"
+        android:layout_height="300dp"
+        app:selector="@drawable/wheel"
+        app:src="@drawable/palette" />
+
+    <LinearLayout
+        android:id="@+id/mLlyColorPallete"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:orientation="vertical"/>
+
+    <Button
+        android:id="@+id/mBtnOkay"
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:text="Preview" />
+
+    <HorizontalScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:id="@+id/mLlyDialPicker"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:orientation="horizontal"/>
+    </HorizontalScrollView>
+
+</LinearLayout>
