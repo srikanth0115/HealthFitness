@@ -1,43 +1,78 @@
 <?xml version="1.0" encoding="utf-8"?>
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:tools="http://schemas.android.com/tools"
     xmlns:frisson="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
     android:id="@+id/activity_main"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context="com.example.srikanthbandi.livewallpaper.activities.MainActivity">
 
-   <RelativeLayout
-       android:layout_width="match_parent"
-       android:layout_height="match_parent"
-       android:layout_margin="@dimen/_10dp"
-       android:background="@color/transparent"
-      >
-      <com.example.srikanthbandi.livewallpaper.frission.FrissonView
-          android:id="@+id/wave_head"
-          android:layout_width="match_parent"
-          android:layout_height="match_parent"
-          android:layout_alignParentLeft="true"
-          android:layout_alignParentStart="true"
-          android:layout_alignParentTop="true"
-          android:layout_marginBottom="120dp"
-          frisson:alphaValue="40"
-          frisson:tintColor="#000000"
-          frisson:gradientType="linear"
-          frisson:gradient_endColor="#000000"
-          frisson:gradient_startColor="#000000"
-          frisson:gradientAngle="180"
-          frisson:tideCount="3"
-          frisson:tideHeight="80dp" />
-   </RelativeLayout>
-<Button
-    android:id="@+id/mBtnWallPaper"
-    android:layout_width="match_parent"
-    android:layout_height="@dimen/_50dp"
-    android:gravity="center"
-    android:textColor="@color/white"
-    android:layout_margin="@dimen/_60dp"
-    android:layout_centerInParent="true"
-    android:background="@drawable/boder_et_select"
-    android:text="@string/setwallpaper"/>
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_margin="@dimen/_10dp"
+        android:background="@color/transparent">
+
+        <com.example.srikanthbandi.livewallpaper.frission.FrissonView
+            android:id="@+id/wave_head"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginBottom="40dp"
+            frisson:alphaValue="40"
+            frisson:gradientAngle="180"
+            frisson:gradientType="linear"
+            frisson:gradient_endColor="#000000"
+            frisson:gradient_startColor="#000000"
+            frisson:tideCount="5"
+            frisson:tideHeight="80dp"
+            frisson:tintColor="#000000" />
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+
+        android:orientation="vertical">
+
+        <Button
+            android:id="@+id/mBtnWallPaper"
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/_50dp"
+            android:background="@drawable/boder_et_select"
+            android:ems="15"
+            android:gravity="center"
+            android:text="@string/setwallpaper"
+            android:textColor="@color/white" />
+
+        <Button
+            android:id="@+id/mBtnMoreWallPaper"
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/_50dp"
+            android:layout_marginTop="@dimen/_30dp"
+            android:background="@drawable/boder_et_select"
+            android:ems="15"
+            android:gravity="center"
+            android:text="@string/OtherApps"
+            android:textColor="@color/white" />
+        <Button
+            android:id="@+id/mBtnShare"
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/_50dp"
+            android:layout_marginTop="@dimen/_30dp"
+            android:background="@drawable/boder_et_select"
+            android:ems="15"
+            android:gravity="center"
+            android:text="@string/share"
+            android:textColor="@color/white" />
+    </LinearLayout>
+    <com.startapp.android.publish.ads.banner.Banner
+        android:id="@+id/startAppBanner"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_margin="@dimen/_10dp"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"/>
 </RelativeLayout>

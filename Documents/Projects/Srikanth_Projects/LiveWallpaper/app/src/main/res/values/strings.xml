@@ -1,4 +1,7 @@
 <resources>
     <string name="app_name">LiveWallpaper</string>
     <string name="setwallpaper">SetWallPaper</string>
+    <string name="OtherApps">OtherApps</string>
+    <string name="share">Share</string>
+    <string name="update_version"> A New version is available on playstore.\n Do you want to install?</string>
 </resources>

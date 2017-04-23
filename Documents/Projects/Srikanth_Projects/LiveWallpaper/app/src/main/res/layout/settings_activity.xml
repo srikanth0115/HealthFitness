@@ -1,39 +1,133 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     android:layout_width="match_parent"
-    android:layout_height="match_parent"
-
-    android:orientation="vertical">
-
-    <com.skydoves.colorpickerview.ColorPickerView
-        android:id="@+id/colorPickerView"
-        android:layout_width="300dp"
-        android:layout_height="300dp"
-        app:selector="@drawable/wheel"
-        app:src="@drawable/palette" />
+    android:background="@color/white"
+    android:layout_height="match_parent">
 
     <LinearLayout
-        android:id="@+id/mLlyColorPallete"
         android:layout_width="match_parent"
-        android:layout_height="50dp"
-        android:orientation="vertical"/>
-
-    <Button
-        android:id="@+id/mBtnOkay"
-        android:layout_width="match_parent"
-        android:layout_height="45dp"
-        android:text="Preview" />
-
-    <HorizontalScrollView
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content">
+        android:layout_height="match_parent"
+        android:orientation="vertical">
 
         <LinearLayout
-            android:id="@+id/mLlyDialPicker"
             android:layout_width="match_parent"
-            android:layout_height="60dp"
-            android:orientation="horizontal"/>
-    </HorizontalScrollView>
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:paddingTop="@dimen/_5dp">
 
+            <TextView
+                android:id="@+id/color"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/_15dp"
+                android:gravity="center_vertical"
+                android:text="@string/app_name"
+                android:visibility="gone"
+                android:textSize="@dimen/_20sp" />
+
+            <com.example.srikanthbandi.livewallpaper.utility.GradientView
+                android:id="@+id/top"
+                android:layout_width="match_parent"
+                android:layout_height="200dp"
+                android:layout_margin="@dimen/_10dp"
+                android:background="@drawable/gradient_background"
+                android:padding="@dimen/_2dp"
+                app:lockPointerInBounds="true"
+                app:pointerDrawable="@drawable/pointer_simple"
+                app:radius="@dimen/_3dp" />
+
+            <com.example.srikanthbandi.livewallpaper.utility.GradientView
+                android:id="@+id/bottom"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/_10dp"
+                android:layout_marginEnd="@dimen/_10dp"
+                android:background="@drawable/gradient_background"
+                android:padding="@dimen/_2dp"
+                app:lockPointerInBounds="false"
+                app:pointerDrawable="@drawable/pointer_arrows"
+                app:radius="@dimen/_3dp" />
+
+        </LinearLayout>
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_marginStart="@dimen/_10dp"
+    android:layout_marginEnd="@dimen/_10dp"
+    android:layout_marginTop="@dimen/_10dp"
+    android:layout_height="wrap_content">
+        <LinearLayout
+            android:id="@+id/mLlyColorPallete"
+            android:layout_width="match_parent"
+           android:padding="@dimen/_5dp"
+            android:layout_weight="1"
+
+            android:background="@drawable/shape_bg_border"
+            android:layout_height="150dp"
+            android:orientation="vertical" />
+    <LinearLayout
+        android:id="@+id/mLlyColorPalletePreview"
+        android:layout_width="match_parent"
+        android:padding="@dimen/_5dp"
+        android:layout_weight="1"
+        android:layout_marginStart="@dimen/_5dp"
+        android:layout_height="150dp"
+        android:background="@drawable/shape_bg_border"
+        android:orientation="vertical" >
+    <ImageView
+        android:id="@+id/mImgPreview"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_margin="@dimen/_10dp"
+        android:src="@drawable/clock_eleven"/>
+        </LinearLayout>
 </LinearLayout>
+
+
+
+        <HorizontalScrollView
+            android:layout_width="match_parent"
+            android:layout_marginStart="@dimen/_10dp"
+            android:layout_marginEnd="@dimen/_10dp"
+            android:layout_marginTop="@dimen/_10dp"
+            android:background="@drawable/shape_bg_border"
+            android:layout_height="wrap_content">
+
+            <LinearLayout
+                android:id="@+id/mLlyDialPicker"
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:orientation="horizontal" />
+        </HorizontalScrollView>
+        <HorizontalScrollView
+            android:layout_width="match_parent"
+            android:layout_marginStart="@dimen/_10dp"
+            android:layout_marginEnd="@dimen/_10dp"
+            android:layout_marginTop="@dimen/_10dp"
+            android:background="@drawable/shape_bg_border"
+            android:layout_height="wrap_content">
+
+            <LinearLayout
+                android:id="@+id/mLlyDialPicker_image"
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:orientation="horizontal" />
+        </HorizontalScrollView>
+        <Button
+            android:id="@+id/mBtnOkay"
+            android:layout_width="match_parent"
+            android:layout_height="45dp"
+            android:layout_marginStart="@dimen/_10dp"
+            android:layout_marginEnd="@dimen/_10dp"
+            android:layout_marginTop="@dimen/_10dp"
+            android:background="@drawable/shape_bg_border"
+            android:text="Okay" />
+        <com.startapp.android.publish.ads.banner.Banner
+            android:id="@+id/startAppBanner"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_margin="@dimen/_5dp"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true"/>
+    </LinearLayout>
+</ScrollView>

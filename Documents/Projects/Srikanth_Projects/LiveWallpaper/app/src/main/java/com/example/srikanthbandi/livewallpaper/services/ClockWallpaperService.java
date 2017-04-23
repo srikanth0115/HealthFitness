@@ -108,7 +108,7 @@ public class ClockWallpaperService extends WallpaperService {
 
 			}
 			finally {
-				if (canvas != null)
+				if (canvas != null && holder != null)
 					holder.unlockCanvasAndPost(canvas);
 			}
 
@@ -121,7 +121,7 @@ public class ClockWallpaperService extends WallpaperService {
 
 		private void draw(Canvas canvas) {
 			if(Constants.image_dial == 0)
-				Constants.image_dial = R.drawable.rsz_img_one;
+				Constants.image_dial = R.drawable.clock_three;
 			bgColor = Color.parseColor(Constants.color);
 			canvas.drawColor(bgColor);
 

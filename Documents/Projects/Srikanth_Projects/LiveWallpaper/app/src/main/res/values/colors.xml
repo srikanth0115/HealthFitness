@@ -5,4 +5,5 @@
     <color name="colorAccent">#000000</color>
     <color name="transparent">#24000000</color>
     <color name="white">#FFFFFF</color>
+    <color name="picker_background">#ff7c7c7c</color>
 </resources>

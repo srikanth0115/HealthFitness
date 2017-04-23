@@ -52,5 +52,9 @@
         <attr name="gradient_startColor" />
         <attr name="gradient_endColor" />
     </declare-styleable>
-
+    <declare-styleable name="GradientView">
+        <attr name="pointerDrawable" format="reference"/>
+        <attr name="radius" format="dimension"/>
+        <attr name="lockPointerInBounds" format="boolean"/>
+    </declare-styleable>
 </resources>
