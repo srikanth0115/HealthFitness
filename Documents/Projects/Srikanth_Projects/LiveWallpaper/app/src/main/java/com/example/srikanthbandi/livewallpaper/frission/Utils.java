@@ -3,6 +3,7 @@ package com.example.srikanthbandi.livewallpaper.frission;
 import android.content.Context;
 import android.graphics.Color;
 import android.graphics.Path;
+import android.graphics.Typeface;
 import android.util.TypedValue;
 
 
@@ -34,5 +35,8 @@ class Utils {
         path.lineTo(width, 0);
         path.close();
         return path;
+    }
+    public static Typeface setTypeFace_setTypeFace_proximanova_regular(Context context) {
+        return Typeface.createFromAsset(context.getAssets(), "SFTransRoboticsExtended.ttf");
     }
 }

@@ -1,6 +1,7 @@
 package com.example.srikanthbandi.livewallpaper.utility;
 
 import android.content.Context;
+import android.graphics.Typeface;
 
 /**
  * Created by srikanthbandi on 22/04/17.
@@ -13,4 +14,8 @@ public class Utility {
         }
         return value;
     }
+    public static Typeface setTypeFace_setTypeFace_proximanova_regular(Context context) {
+        return Typeface.createFromAsset(context.getAssets(), "SFTransRoboticsExtended.ttf");
+    }
+
 }

@@ -46,6 +46,7 @@ public class MainActivity extends AppCompatActivity {
     }
     private void setUI() {
         Button mBtnWallPaper = (Button)findViewById(R.id.mBtnWallPaper);
+        mBtnWallPaper.setTypeface(Utility.setTypeFace_setTypeFace_proximanova_regular(this));
         mBtnWallPaper.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
@@ -58,6 +59,7 @@ public class MainActivity extends AppCompatActivity {
             }
         });
         Button mBtnShare = (Button)findViewById(R.id.mBtnShare);
+        mBtnShare.setTypeface(Utility.setTypeFace_setTypeFace_proximanova_regular(this));
         mBtnShare.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
@@ -70,6 +72,7 @@ public class MainActivity extends AppCompatActivity {
             }
         });
         Button mBtnMoreWallPaper = (Button)findViewById(R.id.mBtnMoreWallPaper);
+        mBtnMoreWallPaper.setTypeface(Utility.setTypeFace_setTypeFace_proximanova_regular(this));
         mBtnMoreWallPaper.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {

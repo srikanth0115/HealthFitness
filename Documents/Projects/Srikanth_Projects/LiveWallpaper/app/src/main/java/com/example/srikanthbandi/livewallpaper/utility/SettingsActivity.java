@@ -62,6 +62,7 @@ public class SettingsActivity extends AppCompatActivity {
         mLlyDialPicker = (LinearLayout) findViewById(R.id.mLlyDialPicker);
         mLlyDialPicker_image = (LinearLayout) findViewById(R.id.mLlyDialPicker_image);
         Button mBtnOkay = (Button) findViewById(R.id.mBtnOkay);
+        mBtnOkay.setTypeface(Utility.setTypeFace_setTypeFace_proximanova_regular(this));
         for (int i = 0; i < array_list_dials.size(); i++) {
             final RelativeLayout layout = (RelativeLayout) getLayoutInflater().inflate(R.layout.single_image, null);
             ImageView mImgDial = (ImageView) layout.findViewById(R.id.mImgDial);
