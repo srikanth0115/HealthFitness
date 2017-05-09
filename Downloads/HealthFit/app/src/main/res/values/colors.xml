@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#00aff0</color>
+    <color name="colorPrimaryDark">#00aff0</color>
+    <color name="colorAccent">#00aff0</color>
+    <color name="colorAccent_transparent">#5600aff0</color>
+    <color name="hash">#c0c0c0</color>
+    <color name="white">#FFFFFF</color>
+    <color name="darkgrey">#757575</color>
+
+    <color name="default_base">#FFFFFFFF</color>
+    <color name="default_ripple">#00aff0</color>
+    <color name="default_ripple_from">#FFFFFFFF</color>
+    <color name="default_ripple_to">#00FFFFFF</color>
+
+    <color name="primary_deep_purple">#673AB7</color>
+    <color name="primary_indigo">#3F51B5</color>
+    <color name="primary_blue">#2196F3</color>
+    <color name="primary_light_blue">#03A9F4</color>
+    <color name="primary_cyan">#00BCD4</color>
+    <color name="primary_teal">#009688</color>
+    <color name="primary_light_green">#8BC34A</color>
+    <color name="primary_green">#4CAF50</color>
+    <color name="primary_deep_orange">#FF5722</color>
+    <color name="primary_red">#F44336</color>
+
+    <color name="np_text_color_selected">#d6000000</color>
+    <color name="np_text_color">#8a000000</color>
+
+</resources>
